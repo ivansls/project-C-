@@ -33,27 +33,21 @@ do
     }
     else if (answer == 2) 
     {
-        int n = 5;
-        int m = 6;
-        int col = 0;
-        int row = 0;
-        int[,] a = new int[n, m];
-        for (int i = 0; i < n * m; i++)
-        {
-            if (i != 0 && i % n == 0) col++;
-            a[row, col] = (row + 1) * (col + 1);
-            Console.WriteLine("{0} x {1} = {2}", row + 1, col + 1, a[row, col]);
-            row++;
-            if (row >= n)
-            {
-                row = 0;
-                Console.WriteLine();
-            }
-        }
+        Console.WriteLine("Что уставился, программы не будет!!!");
     }
     else if (answer == 3)
     {
-        Console.WriteLine("Что уставился, программы не будет!!!");
+        Console.WriteLine("Введите число: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        string c = " ";
+        for (int i = 1; i <= number; i++)
+        {
+            if (number % i == 0)
+            {
+                c += i + " ";   
+            }
+        }
+        Console.WriteLine(c);
     }
     else if (answer == 4)
     {
