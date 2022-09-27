@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Выберите номер программы которую хотите запустить: \r\n1 - Игра \"Угадай число\"\r\n2 - Таблица умножения\r\n3 - Вывод делителей числа\r\n4 - выход");
+﻿using System.Runtime.Intrinsics.X86;
+
+Console.WriteLine("Выберите номер программы которую хотите запустить: \r\n1 - Игра \"Угадай число\"\r\n2 - Таблица умножения\r\n3 - Вывод делителей числа\r\n4 - выход");
 bool isListening = true;
 do
 {
@@ -48,5 +50,13 @@ do
                 Console.WriteLine();
             }
         }
+    }
+    else if (answer == 3)
+    {
+        Console.WriteLine("Что уставился, программы не будет!!!");
+    }
+    else if (answer == 4)
+    {
+        isListening = false;
     }
 } while (isListening == true);
