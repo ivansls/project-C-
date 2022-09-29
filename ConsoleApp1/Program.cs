@@ -9,7 +9,7 @@ bool isListening = true;
 do
 {
     Console.WriteLine("Введите номер команды:");
-    int answer = Convert.ToInt16(Console.ReadLine());
+    int answer = Convert.ToInt32(Console.ReadLine());
     if (answer == 1)
     {
         bool isListening1 = true;
