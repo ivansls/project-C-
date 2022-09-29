@@ -1,6 +1,10 @@
 ﻿using System.Runtime.Intrinsics.X86;
 
-Console.WriteLine("Выберите номер программы которую хотите запустить: \r\n1 - Игра \"Угадай число\"\r\n2 - Таблица умножения\r\n3 - Вывод делителей числа\r\n4 - выход");
+Console.WriteLine("Выберите номер программы которую хотите запустить: " +
+ "\r\n1 - Игра \"Угадай число\"\r\n" +
+    "2 - Таблица умножения\r\n" +
+    "3 - Вывод делителей числа\r\n" +
+    "4 - выход");
 bool isListening = true;
 do
 {
@@ -33,7 +37,14 @@ do
     }
     else if (answer == 2) 
     {
-        Console.WriteLine("Что уставился, программы не будет!!!");
+        for (int i = 1; i <= 10; i++)
+        {
+            for (int j = 1; j <= 10; j++)
+            {
+                Console.Write((i * j) + "\t");
+            }
+            Console.WriteLine();
+        }
     }
     else if (answer == 3)
     {
